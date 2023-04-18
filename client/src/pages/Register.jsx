@@ -3,18 +3,15 @@ import '../styles/register.css';
 import ragimg from "../assets/images/ava-2.jpg"
 import Aos from "aos";
 import 'aos/dist/aos.css';
-// import Footer from '../component/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-// import Navbar from './Navbar';
 
 const Register = () => {
-
     useEffect(() => {
         Aos.init({
-           duration: 1200
+            duration: 1200
         });
-     }, []);
+    }, []);
 
     const [passShow, setPassshow] = useState(false);
     const [cpassShow, setCPassshow] = useState(false);
@@ -27,7 +24,6 @@ const Register = () => {
     });
 
     const setVal = (e) => {
-        // console.log(e.target.value);
         const { name, value } = e.target;
 
         setInpval(() => {
@@ -77,25 +73,23 @@ const Register = () => {
                 autoClose: 1500,
             })
         } else {
-            // console.log('user registration succesfully done')
-            const data = await fetch( `${process.env.REACT_APP_SERVER_HOST}/register`, {
+            const data = await fetch(`http://localhost:5000/user/signup`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    fname, email, password, cpassword
+                    fname, email, password
                 })
             });
 
             const res = await data.json();
-            // console.log(res)
             if (res.status === (201)) {
                 toast("Registration done successfully", {
                     autoClose: 1500,
                 })
                 setInpval({ ...inpval, fname: " ", email: " ", password: "", cpassword: "" })
-            }else{
+            } else {
                 toast("Please Enter Correct Details!", {
                     autoClose: 1500,
                 })
@@ -105,12 +99,10 @@ const Register = () => {
 
     return (
         <>
-           {/* <Navbar/> */}
-           
-            <section className='container ragister'>
 
+            <section className='container ragister'>
                 <div className='ragisterimg' data-aos="fade-down-right">
-                    <img src={ragimg} alt ="img" ></img>
+                    <img src={ragimg} alt="img" ></img>
                 </div>
 
                 <div className='form_data' data-aos="fade-down-left">
@@ -153,9 +145,6 @@ const Register = () => {
                     </form>
                 </div>
             </section>
-
-                {/* <Footer/> */}
-
             <ToastContainer />
         </>
     )

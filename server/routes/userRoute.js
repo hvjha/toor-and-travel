@@ -5,14 +5,13 @@ const jwt = require("jsonwebtoken");
 const keysecret = "durgeshchaudharydurgeshchaudhary"
 const bcrypt = require('bcryptjs');
 const fetchuser = require('../middleware/fetchuser');
-const Booking = require('../schema/BookingSchema')
 
 
 //======== signup API path /user/signup =====================
 
 router.post('/signup', async (req, res) => {
     // destructure the value of name, email, password form frontend(req.body)
-    const { username, phone, email, password, type } = req.body;
+    const { fname, email, password } = req.body;
     try {
         // hash the password using salt of 10
         const salt = await bcrypt.genSalt(10);
@@ -24,7 +23,7 @@ router.post('/signup', async (req, res) => {
             res.status(404).json({ error: "This Email is Already Exist" });
         } else {
             // else condition me save the userdata
-            const data = new User({ username, email, password: pass, type, phone })
+            const data = new User({ username: fname, email, password: pass })
             // save user data using .save method
             const user = await data.save()
             // create token using secret key
@@ -82,7 +81,7 @@ router.post('/BookedAddress', fetchuser, async (req, res) => {
         const data = new Booking({
             userId: req.user.id,
             pickupAddress: Address.pickupAddress,
-           
+
         })
         const save = await data.save();
         res.status(200).json(save);

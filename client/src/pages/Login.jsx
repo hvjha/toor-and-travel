@@ -6,8 +6,6 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-// import Footer from '../component/Footer'
-// import Navbar from './Navbar';
 
 const Login = () => {
 
@@ -25,10 +23,8 @@ const Login = () => {
         email: '',
         password: '',
     })
-    // console.log(inpval);
 
     const setVal = (e) => {
-        // console.log(e.target.value);
         const { name, value } = e.target;
 
         setInpval(() => {
@@ -59,8 +55,7 @@ const Login = () => {
                 autoClose: 3000,
             })
         } else {
-            // console.log('user registration succesfully done')
-            const data = await fetch(`${process.env.REACT_APP_SERVER_HOST}/login`, {
+            const data = await fetch(`http://localhost:5000/user/login`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -70,13 +65,13 @@ const Login = () => {
                 })
             });
             const res = await data.json();
-            // console.log(res);
+            console.log(res);
             if (res.status === (201)) {
                 toast("Logged In successfully", {
                     autoClose: 3000,
                 })
-                localStorage.setItem('usersdatatoken', res.result.token)
-                Navigate('/')
+                localStorage.setItem('token', res.token);
+                Navigate('/enterdata')
                 setInpval({ ...inpval, email: " ", password: "" })
             } else if (res.status !== (201)) {
                 toast("Please Enter correct Details", {
@@ -88,7 +83,6 @@ const Login = () => {
 
     return (
         <>
-          {/* <Navbar/> */}
             <section className='container login'>
                 <div className='loginimg' data-aos="fade-down-right">
                     <img src={logimg} alt ="img"></img>
