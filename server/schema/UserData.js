@@ -2,17 +2,27 @@ const mongoose = require('mongoose');
 require('mongoose-type-email');
 
 let schema = new mongoose.Schema({
-    username: {
+    photo: {
         type: String,
         required: true,
     },
-    email: {
-        type: mongoose.SchemaTypes.Email,
-        unique: true,
-        lowercase: true,
+    state: {
+        type: String,
         required: true,
     },
-    password: {
+    city: {
+        type: String,
+        required: true,
+    },
+    placeName: {
+        type: String,
+        required: true,
+    },
+    video: {
+        type: String,
+        required: true,
+    },
+    text: {
         type: String,
         required: true,
     },
