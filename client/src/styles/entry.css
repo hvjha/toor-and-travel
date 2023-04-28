@@ -1,0 +1,44 @@
+.contact .row{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    display:flex;
+    flex-wrap: wrap-reverse;
+    padding: 1rem;
+}
+.contact .row form{
+    flex: 1 1 50rem;
+    padding: .5rem 1rem;
+}
+.contact .row .map{
+    flex: 1 1 30rem;
+    width: 100%;
+    padding: 1rem;
+}
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form textarea, 
+.contact .row form .inputBox input{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background: #f7f7f7;
+    text-transform: none;
+    width: 49%;
+}
+.contact .row form textarea{
+    width: 100%;
+    height: 20rem;
+    resize: none;
+}
+.contact .row form textarea:focus, 
+.contact .row form .inputBox input{
+    background: var(--light-red);
+}

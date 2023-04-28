@@ -7,10 +7,6 @@
     transition: all .3s;
 }
 
-.login .loginimg img{
-    width: 30rem;
-}
-
 .login .form_data{
     width: 22rem;
     margin: 25px auto;

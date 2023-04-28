@@ -2,20 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 1rem ;
-    padding-bottom: 2rem;
+    padding-top: .5rem ;
+    padding-bottom: 1rem;
     transition: all .3s;
     gap: 5rem;
 }
 
-.ragister .ragisterimg img{
-    width: 30rem;
-}
 
 .ragister .form_data{
     width: 22rem;
-    margin: 25px auto;
-    padding: 35px 30px;
+    margin: 2px auto;
+    padding: 8px 20px;
     box-shadow: 0 0 15px -10px #232354;
     border-radius: 10px;
     display: flex;
@@ -30,34 +27,27 @@
 }
 
 .form_data h1{
-    font-size: 34px;
+    font-size: 20px;
+    padding-top: 10px;
     color: #232354;
 }
 
-.form_data p{
-    color: #718096;
-    font-size: 15px;
-    padding-top: 0px;
-}
-
 .form_data form{
-    margin-top: 10px;
+    margin-top: px;
     width: 100%;
 }
 
 .form_data form .form_input input{
     width: 100%;
-    padding: 10px;
     border: 1px solid #d4d0d0;
     border-radius: 5px;
     outline: none;
-    margin-bottom: 14px;
-    margin-top: 9px;
     font-size: 14px;  
 }
 
 .form_data form .form_input label{
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .form_input .two{
@@ -94,14 +84,14 @@
 form .btn{
     display:block;
     width: 100%;
-    padding: 12px;
+    padding: 7px;
     border: none;
     outline: none;
     border-radius: 5px;
     background-color:#232354;
     color: #fff;
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 3px;
     cursor: pointer;
 }
 

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react'
 import '../styles/login.css';
-import logimg from "../assets/images/ava-1.jpg";
+// import logimg from "../assets/images/ava-1.jpg";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -84,13 +84,13 @@ const Login = () => {
     return (
         <>
             <section className='container login'>
-                <div className='loginimg' data-aos="fade-down-right">
+                {/* <div className='loginimg' data-aos="fade-down-right">
                     <img src={logimg} alt ="img"></img>
-                </div>
+                </div> */}
                 <div className='form_data' data-aos="fade-down-left">
                     <div className='form_heading'>
                         <h1>Welcome to Login</h1>
-                        <p>Hi, we are you glad you are back. Please login</p>
+                        {/* <p>Hi, we are you glad you are back. Please login</p> */}
                     </div>
 
                     <form>
@@ -111,7 +111,7 @@ const Login = () => {
 
                         <button className='btn' onClick={loginuser} >Login</button>
                         <p>Don't have an Account? <Link to="/signup"> Sign Up</Link></p>
-                        <p>Forgot Password: <Link to="/password-reset"> Click Here</Link></p>
+                        {/* <p>Forgot Password: <Link to="/password-reset"> Click Here</Link></p> */}
                     </form>
                 </div>
             </section>
