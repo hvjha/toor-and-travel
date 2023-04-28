@@ -3,13 +3,13 @@
     --light-red:#f9edeb;
 }
 *{
-    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Nunito', sans-serif;
     margin: 0;padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
 } 
 html{
     /* font-size: 62.5%; */
@@ -32,10 +32,13 @@ section{
     display:flex;
     flex-wrap: wrap-reverse;
     padding: .5rem;
+    margin-top: 2rem;
 }
 .contact .row form{
     flex: 1 1 50rem;
     padding: .1rem .5rem;
+    text-transform: capitalize;
+
 }
 .contact .row form .inputBox{
     display: flex;

@@ -33,15 +33,15 @@ const EnterData = () => {
                 <div class="row">
                     <form>
                         <div class="inputBox">
-                            <input type="text" placeholder="state" name='state' onChange={(e) => { setInpval((prev) => ({ ...prev, state: e.target.value })) }} />
-                            <input type="text" placeholder="city" name='city' onChange={(e) => { setInpval((prev) => ({ ...prev, city: e.target.value })) }} />
-                            <input type="text" placeholder="placename" name='placename' onChange={(e) => { setInpval((prev) => ({ ...prev, place: e.target.value })) }} />
+                            <input type="text" placeholder="State" name='state' onChange={(e) => { setInpval((prev) => ({ ...prev, state: e.target.value })) }} />
+                            <input type="text" placeholder="City" name='city' onChange={(e) => { setInpval((prev) => ({ ...prev, city: e.target.value })) }} />
+                            <input type="text" placeholder="Placename" name='placename' onChange={(e) => { setInpval((prev) => ({ ...prev, place: e.target.value })) }} />
                         </div>
                         <div class="inputBox">
                             <input type="file" onchance="readURL(this)" accept="Image" placeholder="photo" name='photo' onChange={(e) => { setInpval((prev) => ({ ...prev, photo: e.target.value })) }} />
                             <input type="file" onchance="readURL(this)" accept="Video" placeholder="video" name='video' onChange={(e) => { setInpval((prev) => ({ ...prev, video: e.target.value })) }} />
                         </div>
-                        <textarea name="" placeholder="message" id="" cols="30" rows="10" onChange={(e) => { setInpval((prev) => ({ ...prev, msg: e.target.value })) }} />
+                        <textarea name="" placeholder="Message" id="" cols="30" rows="10" onChange={(e) => { setInpval((prev) => ({ ...prev, msg: e.target.value })) }} />
                         <input type="submit" value="SavedData" onClick={SavedData} className="btn1" />
                     </form>
                 </div>
