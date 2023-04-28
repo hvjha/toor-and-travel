@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import '../styles/register.css';
-// import ragimg from "../assets/images/gallery-02.jpg"
-import Aos from "aos";
-import 'aos/dist/aos.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 
-const Register = () => {
-    useEffect(() => {
-        Aos.init({
-            duration: 1200
-        });
-    }, []);
+const Register = () => {;
 
     const [passShow, setPassshow] = useState(false);
     const [cpassShow, setCPassshow] = useState(false);
@@ -101,11 +93,9 @@ const Register = () => {
         <>
 
             <section className='container ragister'>
-                {/* <div className='ragisterimg' data-aos="fade-down-right">
-                    <img src={ragimg} alt="img" ></img>
-                </div> */}
+   
 
-                <div className='form_data' data-aos="fade-down-left">
+                <div className='form_data' >
                     <div className='form_heading'>
                         <h1>Sign Up</h1>
                     </div>

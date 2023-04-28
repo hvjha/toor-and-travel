@@ -8,9 +8,9 @@
 }
 
 .login .form_data{
-    width: 22rem;
+    width:50%;
     margin: 25px auto;
-    padding: 35px 30px;
+    padding: 5rem 4rem;
     box-shadow: 0 0 15px -10px #232354;
     border-radius: 10px;
     display: flex;
