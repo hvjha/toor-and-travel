@@ -42,6 +42,7 @@ const EnterData = () => {
                             <input type="file" onchance="readURL(this)" accept="Video" placeholder="video" name='video' onChange={(e) => { setInpval((prev) => ({ ...prev, video: e.target.value })) }} />
                         </div>
                         <textarea name="" placeholder="message" id="" cols="30" rows="10" onChange={(e) => { setInpval((prev) => ({ ...prev, msg: e.target.value })) }} />
+                        <input type="submit" value="SavedData" className="btn1" />
                     </form>
                 </div>
             </section>
