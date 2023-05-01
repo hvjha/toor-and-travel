@@ -6,7 +6,7 @@ const EnterData = () => {
         state: '',
         city: '',
         place: "",
-        video: "",
+        video: "",  
         photo: "",
         msg: ""
     })
@@ -16,14 +16,17 @@ const EnterData = () => {
         const data = await fetch(`http://localhost:5000/data/datauser`, {
             method: 'POST',
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "token": localStorage.getItem("token")
             },
             body: JSON.stringify({
                 inpval
             })
         });
         const res = await data.json();
-        console.log(res, "res")
+        if(res){
+             window.location.reload()
+        }
     }
 
 
