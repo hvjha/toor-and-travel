@@ -1,24 +1,48 @@
-import React from 'react'
-import {Container,Row,Col} from 'reactstrap'
-import FeaturedTourList from '../components/Featured_tours/FeaturedTourList'
-import Subtitle from './../shared/Subtitle';
-
+import React from "react";
+import "../styles/tour.css";
+import img from "../assets/images/gallery-01.jpg";
 
 const Tours = () => {
   return (
+    <section class="expert" id="experts">
+      <h1 class="heading">
+        place <span>visited</span>?
+      </h1>
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="box p-4 m-2">
+            <img src={img} />
+            <div class="icons">
+              <div className="first">Placename</div>
+              <div classNaame="second">
+                <table>
+                  <tr>
+                    <th>coity</th>
+                    <th>state</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="box p-4 m-2">
+            <img src={img} />
+            <h3>Priti</h3>
+            <span>virus expert</span>
+          </div>
+          <div class="box p-4 m-2">
+            <img src={img} />
+            <h3>Priti</h3>
+            <span>virus expert</span>
+          </div>
+          <div class="box p-4 m-2">
+            <img src={img} />
+            <h3>Harsh</h3>
+            <span>virus expert</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-     <section>
-          <Container>
-            <Row>
-              <Col lg='12' className='mb-5'>
-                <Subtitle Subtitle={'Explore'}/>
-                <h2 className="featured__tour-title">Our featured tours</h2> 
-              </Col>
-              <FeaturedTourList/>
-            </Row>
-          </Container>
-        </section>
-  )
-}
-
-export default Tours
+export default Tours;
