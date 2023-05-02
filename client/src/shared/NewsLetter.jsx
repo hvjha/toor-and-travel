@@ -14,11 +14,11 @@ const NewsLetter = () => {
                     <input type="email" placeholder='abc@gmail.com' />
                     <button className="btn newsletter__btn">Subcribe</button>
                  </div>
-                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laborum
+                 {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laborum
                      error ipsum vel ipsa autem dicta repellat voluptate
                       eius assumenda nulla, officia quos quae? Minus minima aut 
                       modi excepturi quod.
-                      </p>
+                      </p> */}
                 </div> 
             </Col>
 

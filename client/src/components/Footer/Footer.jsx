@@ -49,12 +49,11 @@ const Footer = () => {
           <Col lg='3'>
           <div className="logo">
             <img src={logo} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-               itaque esse autem vel praesentium at.</p>
+            <p>This is only the place that will help you in your travel journey</p>
                <div className="social__links d-flex align-items-center gap-4">
-                <span>
+                {/* <span>
                   <Link to="https://www.linkedin.com/in/aman-kumar-a5a7871b9/"><i class="ri-linkedin-box-line"></i></Link>
-                </span>
+                </span> */}
 
                 <span>
                   <Link to="https://github.com/Amanraj8969"><i class="ri-github-line"></i></Link>

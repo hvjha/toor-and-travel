@@ -49,7 +49,7 @@ const Testimonials = () => {
             <div className="d-flex align-items-center gap-4 mt-3">
                 <img src={ava01} className='w-25 h-25 rounded-2' alt="" />
                 <div>
-                    <h6 className='mb-0 mt-3'>Aman Kumar</h6>
+                    <h6 className='mb-0 mt-3'>surya yadav</h6>
                     <p>Customer</p>
                 </div>
             </div>
@@ -62,7 +62,7 @@ const Testimonials = () => {
             <div className="d-flex align-items-center gap-4 mt-3">
                 <img src={ava02} className='w-25 h-25 rounded-2' alt="" />
                 <div>
-                    <h6 className='mb-0 mt-3'>Ashutosh Kumar</h6>
+                    <h6 className='mb-0 mt-3'>shiv Narayan</h6>
                     <p>Customer</p>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const Testimonials = () => {
             <div className="d-flex align-items-center gap-4 mt-3">
                 <img src={ava03} className='w-25 h-25 rounded-2' alt="" />
                 <div>
-                    <h6 className='mb-0 mt-3'>Golu Kumar</h6>
+                    <h6 className='mb-0 mt-3'>Vivek</h6>
                     <p>Customer</p>
                 </div>
             </div>

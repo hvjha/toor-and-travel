@@ -4,6 +4,7 @@ const fetchuser = require('../middleware/fetchuser');
 const router = express.Router();
 
 router.post('/datauser', async (req, res) => {
+   
     try {
         const data = new UserData({ photo: "", state: "", city: "", placeName: "", video: "", text: "" })
         const user = await data.save()
