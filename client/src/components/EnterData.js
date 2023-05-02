@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../styles/entry.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import {useNavigate } from 'react-router-dom';
+// import {useNavigate } from 'react-router-dom';
 
 const EnterData = () => {
     // const navigate = useNavigate()
@@ -32,7 +32,7 @@ const EnterData = () => {
             toast("Your Data Saved Successfully", {
                 autoClose: 2000,
             })
-            // navigate("/");
+         
         }
     }
 
