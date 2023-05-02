@@ -9,6 +9,7 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 import SearchResults from '../pages/SearchResults'
 import EnterData from '../components/EnterData'
+import Details from '../components/Details'
 
 
 const Routers = () => {
@@ -22,6 +23,7 @@ const Routers = () => {
       <Route path='/register' element={<Register />} />
       <Route path='/enterdata' element={<EnterData />} />
       <Route path='/tours/search' element={<SearchResults />} />
+      <Route path='/tours/details' element={<Details/>} />
     </Routes>
   )
 }
