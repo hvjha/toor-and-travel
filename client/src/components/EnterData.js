@@ -15,6 +15,8 @@ const EnterData = () => {
         msg: ""
     })
 
+    console.log(inpval)
+
     const SavedData = async (e) => {
         e.preventDefault();
         const data = await fetch(`http://localhost:5000/data/datauser`, {

@@ -24,16 +24,12 @@ const Home = () => {
           <Col lg='6'>
             <div className="hero__content">
              <div className="hero__subtitle d-flex align-items-center">
-              <Subtitle Subtitle={'Know before You Go'}/>
+              <Subtitle Subtitle={'SOMETHING TO EXPLORE'}/>
               <img src={worldImg} alt="" />
              </div>
-             <h1>Traveling opens the door to creating <span className='highlight'>memories</span>
+             <h1>Travel is an investment in yourself <span className='highlight'></span>
              </h1>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-               aboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repre
-               henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca
-              t cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             <p> Both on a Personal and a professional level, getting out of the house and seeing the world can be an enlightening experience.</p>
 
             </div>
           </Col>
@@ -78,7 +74,7 @@ const Home = () => {
             <Row>
               <Col lg='12' className='mb-5'>
                 <Subtitle Subtitle={'Explore'}/>
-                <h2 className="featured__tour-title">Our featured tours</h2> 
+                <h2 className="featured__tour-title">Must Visits</h2> 
               </Col>
               <FeaturedTourList/>
             </Row>
@@ -95,10 +91,10 @@ const Home = () => {
               <div className="experience__content">
                 <Subtitle Subtitle={'Experience'}/>
 
-                <h2>with our all Experinece <br/>we will serve you</h2>
+                <h2>with our Bloggers <br/>we will enhance your experience</h2>
                 <p>this is experience section where we try to serve you best for your best journey
                   <br/>
-                  with all the research and term and condition
+                  with all the research 
                 </p>
               </div>
               <div className="counter__wrapper d-flex align-items-center gap-5">
@@ -143,7 +139,7 @@ const Home = () => {
               <Row>
                 <Col lg='12'>
                 <Subtitle Subtitle={'Gallery'}/>
-                <h2 className="gallery__title">Visit our customers tour gallery</h2>
+                <h2 className="gallery__title">Visit our Bloggers tour gallery</h2>
                 </Col>
 
                 <Col lg='12'>
@@ -165,7 +161,7 @@ const Home = () => {
                 <Col lg='12'>
                   <Subtitle Subtitle={'Fans Love'}/>
                   <h2 className="testimonial__title">
-                    What our fans says about us😊
+                    What Travelers says about us😊
                   </h2>
                 </Col>
                 <Col lg='12'>
