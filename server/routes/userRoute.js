@@ -66,21 +66,5 @@ router.post('/login', async (req, res) => {
     }
 })
 
-router.post('/BookedAddress', fetchuser, async (req, res) => {
-    const { Address, VehicleId } = req.body
-    try {
-        const data = new Booking({
-            userId: req.user.id,
-            pickupAddress: Address.pickupAddress,
-
-        })
-        const save = await data.save();
-        res.status(200).json(save);
-    } catch (error) {
-        console.error(error.message);
-        res.status(500).send("Some error occured")
-    }
-})
-
 
 module.exports = router;

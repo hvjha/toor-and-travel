@@ -21,3 +21,12 @@
     height: 10rem;
     border-radius: .3rem;
 }
+
+.allimages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.allimages img{
+    width: 100%;
+}

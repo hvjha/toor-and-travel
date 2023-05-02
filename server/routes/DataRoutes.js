@@ -33,4 +33,14 @@ router.get('/UserEnteredData', fetchuser, async (req, res) => {
     }
 })
 
+router.get('/AllUserData', async (req, res) => {
+    try {
+        const data = await UserData.find();
+        res.status(200).json(data);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Some error occured")
+    }
+})
+
 module.exports = router;

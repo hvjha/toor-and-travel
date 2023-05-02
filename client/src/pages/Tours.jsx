@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/tour.css";
-import img from "../assets/images/gallery-01.jpg";
 
 const Tours = () => {
   const [data, setData] = useState();

@@ -38,7 +38,6 @@ const EnterData = () => {
         }
     }
 
-
     return (
         <>
             <section className="contact" id="contact">
