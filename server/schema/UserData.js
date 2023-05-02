@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 require('mongoose-type-email');
 
 let schema = new mongoose.Schema({
+    userId: {
+        type: String,
+        required: true,
+    },
     photo: {
         type: String,
         required: true,

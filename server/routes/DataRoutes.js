@@ -3,11 +3,19 @@ const UserData = require('../schema/UserData');
 const fetchuser = require('../middleware/fetchuser');
 const router = express.Router();
 
-router.post('/datauser', async (req, res) => {
-   
+router.post('/datauser', fetchuser, async (req, res) => {
+    const data = req.body.inpval
     try {
-        const data = new UserData({ photo: "", state: "", city: "", placeName: "", video: "", text: "" })
-        const user = await data.save()
+        const saved = new UserData({
+            userId: req.user.id,
+            photo: data.photo,
+            state: data.state,
+            city: data.city,
+            placeName: data.place,
+            video: data.video,
+            text: data.msg
+        })
+        const user = await saved.save()
         res.status(200).json(user);
     } catch (error) {
         console.error(error.message);

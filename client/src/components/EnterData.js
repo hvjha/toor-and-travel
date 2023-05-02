@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import '../styles/entry.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+// import {useNavigate } from 'react-router-dom';
 
 const EnterData = () => {
+    // const navigate = useNavigate()
     const [inpval, setInpval] = useState({
         state: '',
         city: '',
@@ -26,7 +30,12 @@ const EnterData = () => {
             })
         });
         const res = await data.json();
-        console.log(res, "res")
+        if (res) {
+            toast("Your Data Saved Successfully", {
+                autoClose: 2000,
+            })
+         
+        }
     }
 
 
@@ -50,6 +59,7 @@ const EnterData = () => {
                 </div>
             </section>
 
+            <ToastContainer />
         </>
     )
 }
