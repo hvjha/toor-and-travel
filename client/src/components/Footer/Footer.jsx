@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import {Container,Row,Col,ListGroup,ListGroupItem} from 'reactstrap'
 import {Link} from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
 import logo from '../../assets/images/logo.png'
 
 const quick__links=[
@@ -56,15 +57,15 @@ const Footer = () => {
                 </span> */}
 
                 <span>
-                  <Link to="https://www.youtube.com/@Indian.Humsafar.Official"><i class="ri-youtube-line"></i></Link>
+                  <a href="https://www.youtube.com/@Indian.Humsafar.Official"><i class="ri-youtube-line"  ></i></a>
                 </span>
 
                 <span>
-                  <Link to="https://instagram.com/indian_humsafar07?igshid=ZDdkNTZiNTM="><i class="ri-instagram-line"></i></Link>
+                  <a href="https://instagram.com/indian.humsafar?igshid=ZDdkNTZiNTM="><i class="ri-instagram-line"></i></a>
                 </span>
 
                 <span>
-                  <Link to="https://www.facebook.com"><i class="ri-facebook-box-line"></i></Link>
+                  <a href="https://www.facebook.com/profile.php?id=100092371210389&mibextid=ZbWKwL"><i class="ri-facebook-box-line"></i></a>
                 </span>
                </div>
           </div>

@@ -34,13 +34,15 @@ const TourCard = () => {
                     <img src={items.photo} ></img>
                   </div>
                   <div className='d-flex ' >
-                    <div  >
+                    {/* <div  >
                       <small>City</small>
-                    </div>
+                    </div> */}
                     <div>
+                  
                       <span>{items.city}</span>
                     </div>
                   </div>
+                  
                   <div>
                     <span>{items.placeName}</span>
                   </div>

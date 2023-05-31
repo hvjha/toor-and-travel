@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { Container, Row, Button } from 'reactstrap'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+
 import './Header.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -43,9 +44,9 @@ const Header = () => {
         <Container>
           <Row>
             <div className="nav_wrapper d-flex align-items-center justify-content-between">
-              {/* <div className="logo">
+              <div className="logo">
                 <img src={logo} alt="logo of the website" />
-              </div> */}
+              </div>
               <div className="navigation">
                 <ul className="menu d-flex align-items-center gap-5">
                   <li className="nav__item" >

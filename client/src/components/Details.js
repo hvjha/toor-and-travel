@@ -22,20 +22,20 @@ const Details = () => {
                         </div>
 
                         <div  >
-                            <small>{location.state?.text}</small>
+                            <small style={{ fontSize: '22px' }}>{location.state?.text}</small>
                         </div>
 
                         <div className='d-flex ' >
-                            <div>
-                                <span>{location.state?.city}</span>
+                            <div >
+                                <span style={{ fontSize: '22px', fontWeight: 'bold' }}>{location.state?.city}</span>
                             </div>
                         </div>
-                        <div>
-                            <span>{location.state?.state}</span>
+                        <div >
+                            <span style={{ fontSize: '22px', fontWeight: 'bold' }}>{location.state?.state}</span>
                         </div>
 
-                        <div>
-                            <span>{location.state?.placeName}</span>
+                        <div >
+                            <span style={{ fontSize: '22px', fontWeight: 'bold'  }}>{location.state?.placeName}</span>
                         </div>
                     </div>
                 </div>
