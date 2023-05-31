@@ -56,11 +56,11 @@ const Footer = () => {
                 </span> */}
 
                 <span>
-                  <Link to="https://github.com/Amanraj8969"><i class="ri-github-line"></i></Link>
+                  <Link to="https://www.youtube.com/@Indian.Humsafar.Official"><i class="ri-youtube-line"></i></Link>
                 </span>
 
                 <span>
-                  <Link to="https://www.instagram.com"><i class="ri-instagram-line"></i></Link>
+                  <Link to="https://instagram.com/indian_humsafar07?igshid=ZDdkNTZiNTM="><i class="ri-instagram-line"></i></Link>
                 </span>
 
                 <span>
@@ -112,7 +112,7 @@ const Footer = () => {
           <span><i class="ri-map-pin-line"></i></span>
           Address:
         </h6>
-        <p className='mb-0'>Daldali road Patna 800003</p>
+        <p className='mb-0'>Jalandhar, Punjab 144021</p>
       </ListGroupItem>
 
       <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
@@ -120,7 +120,7 @@ const Footer = () => {
           <span><i class="ri-mail-unread-line"></i></span>
           Email:
         </h6>
-        <p className='mb-0'>araj6205444@gmail.com</p>
+        <p className='mb-0'>Indian.humsafar@gmail.com</p>
       </ListGroupItem>
 
       <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
@@ -128,7 +128,7 @@ const Footer = () => {
           <span><i class="ri-phone-fill"></i></span>
           Phone:
         </h6>
-        <p className='mb-0'>+91984376152</p>
+        <p className='mb-0'>+916239060459</p>
       </ListGroupItem>
   
   
@@ -138,7 +138,7 @@ const Footer = () => {
              </Col>
 
              <Col lg='12' className='text-center pt-5'>
-              <p className='copyright'>Copyright {year}, design and develop by Team Surya. All right reserved.</p> 
+              <p className='copyright'>Copyright {year}, design and develop by Team Indian Humsafar. All right reserved.</p> 
              </Col>
         </Row>
       </Container>
