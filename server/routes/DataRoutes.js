@@ -23,6 +23,16 @@ router.post('/datauser', fetchuser, async (req, res) => {
     }
 })
 
+router.get('/deleteData/:id', async (req, res) => {
+    try {
+        const data = await UserData.findByIdAndDelete({ _id: req.params.id });
+        res.status(200).json(data);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Some error occured")
+    }
+})
+
 router.get('/UserEnteredData', fetchuser, async (req, res) => {
     try {
         const data = await UserData.find({ userId: req.user.id });

@@ -1,85 +1,31 @@
- :root{
-    --red:#ff5a3c;
-    --light-red:#f9edeb;
-}
-*{
-    font-family: 'Nunito', sans-serif;
-    margin: 0;padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-} 
-html{
-    /* font-size: 62.5%; */
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
-}
-body{
-    background: #f7f7f7;
-}
-section{
-    padding: 1rem 9%;
-}
-
-.contact .row{
-    background: #fff;
-    border: .1rem solid rgba(0,0,0,.2);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    display:flex;
-    flex-wrap: wrap-reverse;
-    padding: .5rem;
-    margin-top: 2rem;
-}
-.contact .row form{
-    flex: 1 1 50rem;
-    padding: .1rem .5rem;
-    text-transform: capitalize;
-
-}
-.contact .row form .inputBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.contact .row form textarea, 
-.contact .row form .inputBox input{
-    margin-top: .5rem;
-    padding: .5rem;
-    font-size: 1.3rem;
-    color: #333;
-    border: .1rem solid rgba(0,0,0,.1);
-    border-radius: .5rem;
-    background: #f7f7f7;
-    text-transform: none;
-    width: 49%;
-}
-.contact .row form textarea{
-    width: 100%;
-    height: 10rem;
-    resize: none;
-}
-.contact .row form textarea:focus, 
-.contact .row form .inputBox input{
-    background: var(--light-red);
-}
-.btn1{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .8rem 3.5rem;
-    border-radius: .5rem;
-    font-size: 1.7rem;
-    color: var(--red);
-    background: var(--light-red);
-    cursor: pointer;
+.inputform{
+    box-shadow: 0px 0px 10px -7px black;
+    padding: 2rem 2rem;
     text-align: center;
-    justify-content: center;
-    margin-left: 350px;
 }
-.btn1:hover{
-    background: var(--red);
-    color: #fff;
+
+.formstart{
+    padding-top: 3rem;
+}
+
+.btn1{
+    background-color:var( --primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .7rem 4rem;
+    font-weight: 600;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.headings{
+    font-size: 1.3rem;
+    font-weight: 600;
 }

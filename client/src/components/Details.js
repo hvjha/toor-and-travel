@@ -2,42 +2,25 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 
 const Details = () => {
-
     const location = useLocation()
-    console.log(location.state)
-
     return (
         <>
             <div className="container" >
-                <div className="cardstext" >
+                <div className="cardtext my-4 " >
                     <div className="startVideo" >
-
-                        <div className='imhVideo' >
-                            <div>
-                                <img src={location.state?.photo} ></img>
-                            </div>
-                            {/* <div>
-                                 {location.state?.video}
-                            </div> */}
+                        <div className='text-center' >
+                            <img src={location.state?.photo} ></img>
+                        </div>
+                        <div className='text ' >
+                            <span >State: {location.state?.state}</span><br></br>
+                            <span>City: {location.state?.city}</span> <br></br>
+                            <span>Place: {location.state?.placeName}</span>
                         </div>
 
-                        <div  >
-                            <small style={{ fontSize: '22px' }}>{location.state?.text}</small>
-                        </div>
-
-                        <div className='d-flex ' >
-                            <div >
-                                <span style={{ fontSize: '22px', fontWeight: 'bold' }}>{location.state?.city}</span>
-                            </div>
-                        </div>
-                        <div >
-                            <span style={{ fontSize: '22px', fontWeight: 'bold' }}>{location.state?.state}</span>
-                        </div>
-
-                        <div >
-                            <span style={{ fontSize: '22px', fontWeight: 'bold'  }}>{location.state?.placeName}</span>
-                        </div>
                     </div>
+                </div>
+                <div  >
+                    <span>{location.state?.text}</span>
                 </div>
             </div>
 

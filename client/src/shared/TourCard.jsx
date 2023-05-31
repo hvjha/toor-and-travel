@@ -33,25 +33,20 @@ const TourCard = () => {
                   <div>
                     <img src={items.photo} ></img>
                   </div>
-                  <div className='d-flex ' >
-                    {/* <div  >
-                      <small>City</small>
-                    </div> */}
-                    <div>
-                  
-                      <span>{items.city}</span>
-                    </div>
+
+                  <div className='my-2' >
+                    <span>{items.city}</span>
                   </div>
-                  
-                  <div>
+
+                  <div  className='my-1' >
                     <span>{items.placeName}</span>
                   </div>
 
-                  <div>
+                  <div  className='my-1' >
                     <span>{items.state}</span>
                   </div>
-                  <div>
-                    <NavLink to={"/tours/details"} state={items} >View More </NavLink>
+                  <div className='my-4' >
+                    <NavLink to={"/tours/details"} className="btn-more" state={items} >View More </NavLink>
                   </div>
                 </div>
 

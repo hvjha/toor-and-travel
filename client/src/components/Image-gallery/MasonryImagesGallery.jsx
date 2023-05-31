@@ -14,7 +14,6 @@ const MasonryImagesGallery = () => {
     });
     const json = await response.json();
     setData(json);
-    console.log(json, "sklamdl")
   }
 
   useEffect(() => {

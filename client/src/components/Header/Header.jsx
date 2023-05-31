@@ -59,10 +59,10 @@ const Header = () => {
                         <NavLink to={'/tours'} className={navClass => navClass.isActive ? 'active__link' : ""}>Tour</NavLink>
                       </li>
                       <li className="nav__item" >
-                        <NavLink to={'/enterdata'} className={navClass => navClass.isActive ? 'active__link' : ""}>Add Tour</NavLink>
+                        <NavLink to={'/enterdata'} className={navClass => navClass.isActive ? 'active__link' : ""}>AddTour</NavLink>
                       </li>
                       <li className="nav__item" >
-                        <NavLink onClick={handlelogout} to={'/home'} className={navClass => navClass.isActive ? 'active__link' : ""}>Logout</NavLink>
+                        <NavLink onClick={handlelogout} to={'/home'}>Logout</NavLink>
                       </li>
                     </>
                     : ("")
