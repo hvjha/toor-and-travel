@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.post('/datauser', fetchuser, async (req, res) => {
     const data = req.body.inpval
+    console.log(req.user)
     try {
         const saved = new UserData({
             userId: req.user.id,

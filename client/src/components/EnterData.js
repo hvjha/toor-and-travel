@@ -13,22 +13,39 @@ const EnterData = () => {
         msg: ""
     })
 
+    // console.log(localStorage.getItem("token"))
+
     const SavedData = async (e) => {
         e.preventDefault();
+        var letters = /^[A-Za-z]+$/;
         const { state, city, place, msg } = inpval;
         if (state === '') {
             toast("Enter State Name", {
                 autoClose: 2000,
             })
-        } else if( city === ""){
+        } else if (!state?.match(letters)) {
+            console.log(typeof state)
+            toast("Plz Enter Text Only", {
+                autoClose: 2000,
+            })
+        } else if (city === "") {
             toast("Enter city Name", {
                 autoClose: 2000,
             })
-        }else if( place === ""){
+        } else if (!state?.match(letters)) {
+            toast("Plz Enter Text Only", {
+                autoClose: 2000,
+            })
+        }
+        else if (place === "") {
             toast("Enter Place Name", {
                 autoClose: 2000,
             })
-        }else if( msg === ""){
+        } else if (!state?.match(letters)) {
+            toast("Plz Enter Text Only", {
+                autoClose: 2000,
+            })
+        } else if (msg === "") {
             toast("Plz Write Some details", {
                 autoClose: 2000,
             })
@@ -44,6 +61,7 @@ const EnterData = () => {
                 })
             });
             const res = await data.json();
+            console.log(res, "response")
             if (res) {
                 toast("Your Data Saved Successfully", {
                     autoClose: 2000,
@@ -78,7 +96,6 @@ const EnterData = () => {
                     </form>
                 </div>
             </section>
-
             <ToastContainer />
         </>
     )
